@@ -1,26 +1,15 @@
+// import { hot } from 'react-hot-loader/root';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Button, message } from 'antd';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {message.success('Welcome to ant design + reactjs')}
+      <Button type="primary">Button of Antd</Button>
     </div>
   );
 }
 
 export default App;
+// export default hot(App);
